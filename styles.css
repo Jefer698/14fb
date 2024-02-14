@@ -9,6 +9,7 @@
     width: 100vw;
     height: 100vh;
     text-align: center;
+    color: #dc94a4;
 }
 
 p{
@@ -19,9 +20,9 @@ p{
 button{
     font-size: xx-large;
     padding: 0.75em;
-    background-color: red;
-    color: white;
-    border: 1px solid red;
+    background-color: #601927;
+    color: #dc94a4;
+    border: 1px solid #601927;
     border-radius: 5px;
 }
 
