@@ -1,21 +1,20 @@
 const yesBtn = document.querySelector('#yesBtn');
 const card = document.querySelector('#card');
 const closeBtn = document.querySelector('#closeBtn');
-const audio = new Audio('musica.mp3'); // Ruta al archivo de audio
+const bgVideo = document.querySelector('#bgVideo');
 
 yesBtn.addEventListener('click', function () {
     card.classList.remove('hidden');
-    // Reproducir la música de fondo
-    audio.loop = true; // Reproducir en bucle
-    audio.play();
+    bgVideo.classList.remove('video');
+    // Reproducir el video de fondo
+    bgVideo.play();
 });
-
 
 closeBtn.addEventListener('click', function () {
     card.classList.add('hidden');
-    // Detener la música cuando se cierra la tarjeta
-    audio.pause();
-    audio.currentTime = 0; // Reiniciar el tiempo de reproducción al inicio
+    bgVideo.classList.add('hidden');
+    // Pausar el video cuando se cierra la tarjeta
+    bgVideo.pause();
 });
 
 const noBtn = document.querySelector('#noBtn');
