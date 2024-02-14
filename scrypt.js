@@ -12,7 +12,7 @@ yesBtn.addEventListener('click', function () {
 
 closeBtn.addEventListener('click', function () {
     card.classList.add('hidden');
-    bgVideo.classList.add('hidden');
+    bgVideo.classList.add('video');
     // Pausar el video cuando se cierra la tarjeta
     bgVideo.pause();
 });
